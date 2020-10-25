@@ -4,21 +4,26 @@
 <title>WEB2 - HTML </title>
 <meta charset="utf-8">
 <style>
+
 h1 {
   color:skyblue;
 }
-
+h2  {
+  color:chartreuse;
+}
 html {
   color:white;
 }
-
+.main {
+  text-align: center;
+}
 </style>
 
 </head>
 
 <body style="background-color:black;">
 
-<h1><a href="index.html">코딩 공부 정리</a></h1>
+<h1 class="main"><a href="index.html">코딩 공부 정리</a></h1>
 
 <ol><strong>
   <li><a href="1.html">코딩을 시작하며</a></li>
@@ -27,18 +32,25 @@ html {
   <li><a href="4.html">javaScript</a></li>
 </ol>
 
-<h2>HTML 문법 정리 </h2>
-웹의 시작과 끝을 나타내는 tag
-<html>시작 하여 </html>로 끝낸다
+HTML 문법 정리 
+
 
 <ul>
-<p><li>html 태그</li></p>
+<p><h1>html 태그</h1>
+html 시작 하여 /html로 끝낸다웹의 시작과 끝을 나타내는 tag </p>
 
-<p><li>P 태그</li></p>
-<ul>
-  <ul>
+<p><h1>h 태그</h1>
+  제목(heading) 태그는 문서 내에 제목을 표현할 때 사용하는 태그입니다.
+
+태그 이름은 heading을 줄여서 h로 쓰며, 제목의 레벨에 따라서 h1~h6까지 있습니다. </p>
+
+
+<p><h1>P 태그</h1>
+  단락(paragraph) 태그는 paragraph를 줄여서 p로 씁니다.
+</p>
+
 <p><h1>a (Anchor) 태그</h1>
-  <h2>다른 문서로 이동할 수 있는 링크생성하는 태그<br></h2>
+  다른 문서로 이동할 수 있는 링크생성하는 태그<br>
     <li>href="링크주소,또 는 코딩내 다른 페이지"글의 링크를 걸어줄때 사용하는 속성<br>
     <img src="./img/a href 1.jpg" width="50%"></li></p>
 
@@ -75,7 +87,7 @@ html {
 
 <p><ul>
 <h1>img 태그</h1>
-  <h2>페이지에 다운 받은 이미지를 출력할 때에 사용하는 tag</h2><br>
+  페이지에 다운 받은 이미지를 출력할 때에 사용하는 tag<br>
   <p>
     <li>src (source) 속성</li><br>
     <태그 , 속성= "값"><br>
@@ -128,9 +140,8 @@ html {
   </p>
 </ul>
 
-  <p>
+<ul><p>
     <h1>table (표) 요소</h1>
-    <ul>
     <li>td,th : 데이터 셀</li>
     <li>tr : 행</li>
     <li>caption : 표의 제목</li>
@@ -147,48 +158,67 @@ html {
   </p>
 </ul>
 
-  <p>
-    <h1>Form 태그</h1>
-    <ul>
-      <li>input 태그</li><br>
+<ul>
+    <p><h1>Form 요소</h1>
+      <h2>input 태그</h2><br>
     - 대표적인 태그로 다양한 type 속성으로 여러 종류의 입력 양식으로 나타난다. form(태그)action(속성)="" 감싸서 동작시켜 서버에 전달한다
-      <ol>
+      <ol><from>
         <li>text:문자입력칸을 만듬 , placeholder : 문자입력칸 안에 text를 만듬<input type="text" placeholder="영문만써주세요"></li>
         <li>radio : 한가지를 선택해야할때 체크칸을 만듬. 남자<input type="radio" name="gender" checked>여자<input type="radio" name="gender"></li>
         <li>checkbox : 체크박스를 만듬 radio 와 다르게 중복선택 가능<input type="checkbox"></li>
         <li>checked (속성): 참인가 거짓인가</li>
         <li>name 속성 : 그룹화 시키는 속성</li>
-        <l>file : 파일 선택 내 컴퓨터에 있는 파일을 서버에 올릴때 사용<input type="file">
-        <li>submit : 제출 버튼 </li>
-        <li>reset : 초기화 버튼</li>
+        <li>file : 파일 선택 내 컴퓨터에 있는 파일을 서버에 올릴때 사용<input type="file"></li>
+        <li>submit : 제출 버튼 <input type="submit" value="전송"></li>
+        <li>reset : 초기화 버튼<input type="reset" value="취소"></li>
         <li>button : 아무런 기본동작도 하지않는 그냥 버튼 직접 커스텀하여 동작기능을 만들어야한다<input type="button"></li>
         <li>image : 이미지를 넣어 사용하는 버튼 img 태그 처럼 src ait widht height 속성과 함께 사용</li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">더 공부하기</a></li>
-      </ol>
+      </ol></from>
     </ul>
-  </p>
-
-  <p><h1>Select 태그</h1>
-  <ul>
+<ul>
+  <h2>Select 태그</h2>
   <li>선택 목록 상자(콤보박스)로서 option 태그를 안에 넣어 사용한다.</li>
-  <select >
-    <option>서울</option>
-    <option>경기</option>
-    <option>인천</option>
-    <option>우왕</option>
-  </select>
-</ul></p>
+    <select >
+      <option>서울</option>
+      <option>경기</option>
+      <option>인천</option>
+      <option>우왕</option>
+    </select></ul>
 
-<p><h1>textarea 태그</h1>
-  <ul>
+<ul>
+<h2>textarea 태그</h2>
     <li>여러 줄 텍스트 입력 상자 intype text 와 다르게 여러개 사용할 때 사용 cols 속성을 통해 글자수를 정하고(영문기준) rows 속성을 사용하면 줄을 정 할 수 있다</li>
     <textarea></textarea>
   </ul>
-</p>
-<p><h1>button 태그</h1>
-  <ul>
-    <li>사용자가 클릭 가능한 버튼을 만드며 type속성 값으로 submit,reset,button을 가지고있다</li>
+<ul>
+<h2>button 태그</h2>
+    <li>사용자가 클릭 가능한 버튼을 만드며 type속성 값으로 submit,reset,button을 가지고있다. 또한 버튼 안에 내용을 넣을 수 있기에 input 보다는 스타일 적으로 자유롭다</li>
+    <button type="submit">전송</button>
+    <button type="reset">취소</button>
+</ul>
+<ul>
+    <h2>Label 태그</h2>
+      <li>form 요소들을 연걸 시켜주기 위해 사용한다(필수)</li>
+      <ol>
+        <li>label for="아이디",/label으로 감싸고 id 이름을 주어야 한다.</li>
+      </ol>
   </ul>
+  <ul>
+  <h2>fieldset,legend 태그</h2>
+    <li>fieldset : 여러 개의 폼 태그를 그룹화하여 구조적으로 만들기 위해 사용</li>
+    <li>legend : 폼 태그의 제목으로 fieldset 태그 내부에 작성한다</li>
+  </ul>
+  <ul>
+  <h2>※Form 태그※</h2>
+      <li>폼 데이터를 그룹화 하여 서버에 전송한다.</li>
+      <li>form의 속성들</li>
+      <ol>
+        <li>action=" " : 폼 데이터를 처리하기 위한 서버의 주소</li>
+        <li>method=" " : 데이터를 전송하는 방식을 지정(get,post)</li>
+      </ol>
+    </ul>
+    
+
 </p>
-</body>
 </html>
