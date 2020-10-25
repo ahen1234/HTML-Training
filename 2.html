@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB2 - HTML </title>
+<meta charset="utf-8">
+<style>
+h1 {
+  color:skyblue;
+}
+
+html {
+  color:white;
+}
+
+</style>
+
+</head>
+
+<body style="background-color:black;">
+
+<h1><a href="index.html">코딩 공부 정리</a></h1>
+
+<ol><strong>
+  <li><a href="1.html">코딩을 시작하며</a></li>
+  <li><a href="2.html">HTML</a></li>
+  <li><a href="3.html">CSS</a></li>
+  <li><a href="4.html">javaScript</a></li>
+</ol>
+
+<h2>HTML 문법 정리 </h2>
+웹의 시작과 끝을 나타내는 tag
+<html>시작 하여 </html>로 끝낸다
+
+<ul>
+<p><li>html 태그</li></p>
+
+<p><li>P 태그</li></p>
+<ul>
+  <ul>
+<p><h1>a (Anchor) 태그</h1>
+  <h2>다른 문서로 이동할 수 있는 링크생성하는 태그<br></h2>
+    <li>href="링크주소,또 는 코딩내 다른 페이지"글의 링크를 걸어줄때 사용하는 속성<br>
+    <img src="./img/a href 1.jpg" width="50%"></li></p>
+
+    <p><li>target="" 링크를 클릭 할 시 창을 어떻게 열어야 하는지 설정하는 속성<br>
+    <img src="./img/a href 2.jpg"></li><br>
+    </ul>
+    <ul>
+    <a href="https://www.weballtek.com/2020/05/salary-for-front-end-web-developer.html" target="_blank"><img src="./img/img ex1.jpg" width="200"></a></p>
+      <li>_self : 링크를 클릭한 해당 창에서 연다.<br></li>
+      <li>_blank : 링크를 새창으로 연다.<br></li>
+      <li>_parent : 부모 창에서 연다. (부모 창이 없으면 _self 속성으로 처리)<br></li>
+      <li>_top: 전체 브라우저 창에서 가장 상위의 창에서 연다. (부모 창이 없으면 _self 속성으로 처리)<br></li>
+    </p>
+    </ul>
+    <ul>
+    <p><li>a title=""링크 커서를 올릴때 주석 설명을 한다.</li><br>
+      ex)
+      <br><img src="./img/a title1.png" width="300"><br>tag 예시
+    <br><img src="./img/a href 3.jpg"><br>
+    <br> 커서를 올려봅시다.
+      <a title="이미지 출처로 가기"><img src="./img/img ex1.jpg" width="200"></a></p>
+      <p>
+      </ul>
+    <ul>
+      <p>
+      <li>내부링크</li>
+      a 태그를 통해 만들어진 링크가 꼭 외부로 가는 것은 아니다. a 태그를 통해 내부 특정
+      요소로 초점을 이동 할 수 있는데 이를 내부링크라 한다.
+      내부링크를 사용할 때는 herf 속성값에 #을 쓰고 그 뒤에 페이지 내에서 이동하고자 하는
+      요소의 id 속성값을 적으면 된다.<br>
+      <img src="./img/내부링크.jpg">
+    </P>
+    </ul>
+
+<p><ul>
+<h1>img 태그</h1>
+  <h2>페이지에 다운 받은 이미지를 출력할 때에 사용하는 tag</h2><br>
+  <p>
+    <li>src (source) 속성</li><br>
+    <태그 , 속성= "값"><br>
+    <a href="https://www.wordreference.com/enko/source" target="blank" title="사전"><img src="./img/img.jpg"></a>
+    <li>src의 상대 경로와 절대 경로</li>
+    상대경로는 현재 웹 페이지를 기준으로 상대적으로 이미지의 위치를 나타내는 경로이고,절대경로는 실제 그 이미지가 위치한 곳의 전체 경로<br>
+    상대경로 : ./ 현제 페이지가 있는 폴더를 나타냄 ../ 상위 폴더를 나타냄 , folder/<br>
+    절대경로 : C://~~~ , http:// 등등
+  </p>
+  <p>
+    <li>alt 속성</li>
+      이미지의 대체 텍스트를 입력한다
+    </p>
+  <p><li>CSS 속성 width (가로길이) 와 height (세로길이)</li>
+    <img src="./img/img2.jpg"><br>예시본 <br> <img src="./img/img ex2.jpg" width="500"><br><img src="./img/img ex1.jpg" width="300"></p>
+  </p>
+</ul>
+
+<ul>
+  <h1>B.I.U.S 태그</h1>
+  <p>
+      <li>b (bold): 글자를 굵게 표현한다.</li>
+      <li>i (italic) : 글자를 이탤릭체로 표현한다.(기울임)</li>
+      <li>u (underline) : 글자에 밑줄을 표현한다.</li>
+      <li>s (strike) : 글자에 중간선을 표현한다</li>
+  </p>
+</ul>
+
+<ul>
+  <p>
+  <h1>의미없이 요소를 묶기 위한 div와 span태그</h1>
+  <li>div : block-level</li>
+      ex) p 태그
+  <li>span : inline-level</li>
+      ex) B.I.U.S 태그
+  </p>
+</ul>
+
+<ul>
+  <p>
+    <h1>리스트 태그 ul,ol,dl</h1>
+    <li>ul 태그</li>
+      unordered list로 순서가 없는 리스트, 나열된 항목들이 순서와 상관없을 때 사용하며 자식태그로 li 태그를 가지고있다.
+    <li>ol 태그</li>
+      Ordered list로 순서가 있는 리스트, 순서가 중요할때 사용 자식태그로 li 태그를 가지고있다.
+    <li>di 태그</li>
+      Description list로 용어를 설명하는 리스트 자식 태그로 dt 태그와 dd 태그를 가지고있다.<br>
+      - dt 태그 : 용어를 구분<br>
+      - dd 태그 : 용어의 정의나 설명이 들어간다
+  </p>
+</ul>
+
+  <p>
+    <h1>table (표) 요소</h1>
+    <ul>
+    <li>td,th : 데이터 셀</li>
+    <li>tr : 행</li>
+    <li>caption : 표의 제목</li>
+    <li>thead : 제목 행을 그룹</li>
+    <li>tfoot : 바닥 행을 그룹</li>
+    <li>tbody : 본문 행을 그룹</li>
+    <li>colspan : 셀을 가로방향으로 병합 속성</li>
+    <li>rowspan : 셀을 세로방향으로 병합 속성</li>
+    <li>colgroup :</li>
+    <li>col</li>
+    <li>scope</li>
+    <li>headers</li>
+    <br> HTML5.1 ~ 현재(5.2): <tfoot>이 <tbody> 뒤에 위치해야 합니다. <tfoot>의 위치가 <tbody> 앞에 나올 경우 웹 접근성의 키보드의 초점 이동 순서 항목에 문제가 있기 때문에 변경되었습니다.
+  </p>
+</ul>
+
+  <p>
+    <h1>Form 태그</h1>
+    <ul>
+      <li>input 태그</li><br>
+    - 대표적인 태그로 다양한 type 속성으로 여러 종류의 입력 양식으로 나타난다. form(태그)action(속성)="" 감싸서 동작시켜 서버에 전달한다
+      <ol>
+        <li>text:문자입력칸을 만듬 , placeholder : 문자입력칸 안에 text를 만듬<input type="text" placeholder="영문만써주세요"></li>
+        <li>radio : 한가지를 선택해야할때 체크칸을 만듬. 남자<input type="radio" name="gender" checked>여자<input type="radio" name="gender"></li>
+        <li>checkbox : 체크박스를 만듬 radio 와 다르게 중복선택 가능<input type="checkbox"></li>
+        <li>checked (속성): 참인가 거짓인가</li>
+        <li>name 속성 : 그룹화 시키는 속성</li>
+        <l>file : 파일 선택 내 컴퓨터에 있는 파일을 서버에 올릴때 사용<input type="file">
+        <li>submit : 제출 버튼 </li>
+        <li>reset : 초기화 버튼</li>
+        <li>button : 아무런 기본동작도 하지않는 그냥 버튼 직접 커스텀하여 동작기능을 만들어야한다<input type="button"></li>
+        <li>image : 이미지를 넣어 사용하는 버튼 img 태그 처럼 src ait widht height 속성과 함께 사용</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">더 공부하기</a></li>
+      </ol>
+    </ul>
+  </p>
+
+  <p><h1>Select 태그</h1>
+  <ul>
+  <li>선택 목록 상자(콤보박스)로서 option 태그를 안에 넣어 사용한다.</li>
+  <select >
+    <option>서울</option>
+    <option>경기</option>
+    <option>인천</option>
+    <option>우왕</option>
+  </select>
+</ul></p>
+
+<p><h1>textarea 태그</h1>
+  <ul>
+    <li>여러 줄 텍스트 입력 상자 intype text 와 다르게 여러개 사용할 때 사용 cols 속성을 통해 글자수를 정하고(영문기준) rows 속성을 사용하면 줄을 정 할 수 있다</li>
+    <textarea></textarea>
+  </ul>
+</p>
+<p><h1>button 태그</h1>
+  <ul>
+    <li>사용자가 클릭 가능한 버튼을 만드며 type속성 값으로 submit,reset,button을 가지고있다</li>
+  </ul>
+</p>
+</body>
+</html>
